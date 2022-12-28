@@ -31,7 +31,7 @@ do
                 --datasets organamnist --num-tasks 4 --network resnet18 --seed $SEED \
                 --nepochs 200 --batch-size 32 --results-path $RESULTS_DIR \
                 --approach $1 --gpu $2 \
-                --num-exemplars 0 --exemplar-selection herding --lr 0.001
+                --num-exemplars 200 --exemplar-selection herding --lr 0.001
     
   elif [ "$3" = "grow" ]; then
             PYTHONPATH=$SRC_DIR python -u $SRC_DIR/main_incremental.py --exp-name fixd_${SEED} \
