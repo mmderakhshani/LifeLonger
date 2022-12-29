@@ -6,7 +6,7 @@ Please be at the root of the project:
 mkdir data; cd data
 ```
 
-According to your assigned dataset, create a new directory.
+Create a new directory for each dataset
 ```
 mkdir bloodmnist (or tissuemnist or pathmnist or organamnist)
 ```
